@@ -10,8 +10,7 @@
     },
     "permissions":[
     	"contextMenus",
-        "notifications",
-        "tabs"
+        "notifications"
     ]
 
 }
