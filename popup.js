@@ -1,0 +1,26 @@
+$(function(){ 
+  $("#chk").bind({click:function(){ 
+    if($(this).attr("checked")){ 
+      $("#content2").val($("#content").val()); 
+      $("#hmac2").val($("#hmac").val()); 
+      $("#content").hide(); 
+      $("#hmac").hide(); 
+      $("#content2").show();
+      $("#hmac2").show();
+    }
+    else{ 
+      $("#content").val($("#content2").val()); 
+      $("#hmac").val($("#hmac2").val()); 
+      $("#content2").hide(); 
+      $("#hmac2").hide(); 
+      $("#content").show(); 
+      $("#hmac").show(); 
+    } 
+  }}); 
+  $("#bt_gen").bind({click:function(){
+      gen();
+  }});
+  $("#length").bind({click:function(){
+      range();
+  }});
+}); 
