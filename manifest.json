@@ -1,11 +1,14 @@
 {
     "manifest_version": 2,
     "name": "复杂密码生成",
-    "description": "生成原理：md5(\"网站注册名@网站域名,统一密码\")。密码在本地生成，不会上传到任何服务器，只要保证统一密码不泄露就不会泄露你的密码。代码鸣谢：https://www.zhihu.com/question/38369521 @张云龙",
+    "description": "项目地址：https://github.com/LogicJake/Password_CRX 当新注册一个账号并想要生成一个复杂的密码保证安全性时，此扩展就极为方便。建议使用方法：Contenet内容填入此网站注册名@网站域名，HMAC填入统一密码，方便记忆。密码在本地生成，不会上传到任何服务器，只要保证统一密码不泄露就不会泄露你的密码。支持MD5，SHA1，SHA256，SHA512，RMD160加密方式。灵感来源：https://www.zhihu.com/question/38369521 ",
     "version": "1.0",
+    "icons": {
+        "48": "icon.png"
+    },
     "browser_action":{
     	"default_title":"复杂密码生成",
-    	"default_icon":"icon.png",
+    	"default_icon":"icon.ico",
         "default_popup": "popup.html"
     },
     "permissions":[
